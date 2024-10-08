@@ -36,9 +36,9 @@ NEXTAUTH_URL="http://localhost:3000"
 
 1. Clona el repositorio
 2. Ejecuta la migración (asegurarse de tener la base de datos creada)
-npx prisma migrate dev --name init
+- npx prisma migrate dev --name init
 3. Iniciar el entorno de desarrollo
-npm run dev
+- npm run dev
 
 ## Documentación y Recursos
 
