@@ -23,14 +23,22 @@ Antes de empezar, asegúrate de tener lo siguiente instalado:
 
 Configura un archivo `.env` en la raíz del proyecto con las siguientes variables:
 
-# URL de conexión a la base de datos PostgreSQL
+## URL de conexión a la base de datos PostgreSQL
 DATABASE_URL="postgresql://<usuario>:<contraseña>@localhost:5432/<nombre_base_datos>?schema=public"
 
-# Secretos para NextAuth
+## Secretos para NextAuth
 NEXTAUTH_SECRET="el token generado"
 
-# URL de la aplicación
+## URL de la aplicación
 NEXTAUTH_URL="http://localhost:3000"
+
+## Ejecutar el código
+
+1. Clona el repositorio
+2. Ejecuta la migración (asegurarse de tener la base de datos creada)
+npx prisma migrate dev --name init
+3. Iniciar el entorno de desarrollo
+npm run dev
 
 ## Documentación y Recursos
 
